@@ -1,0 +1,168 @@
+<div class="container-fluid mb-5">
+  <div class="row mb-5">
+    <div class="col mt-5">
+
+      <div id="exampleForms" class="text-center">
+        <button class="btn btn-outline-primary" data-toggle="collapse" data-target="#simple">Simple Form</button>
+        <button class="btn btn-outline-primary ml-4" data-toggle="collapse" data-target="#builder">Builder Form</button>
+        <div class="accordion-group">
+          <div class="collapse show" id="simple" data-parent="#exampleForms">
+
+            <div class="container-fluid mb-5">
+              <div class="row mb-5">
+                <div class="col-4 mt-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary font-weight-bold">Result</h5>
+                      {{ simpleForm.value | json }}
+                    </div>
+                  </div>
+                </div>
+                <div class="col-8 mt-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary font-weight-bold">Reactive Form Example</h5>
+                      <form [formGroup]="simpleForm">
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="exampleName">Example name</label>
+                            <input type="text" class="form-control" formControlName="exampleName" id="exampleName"
+                              placeholder="name@example.com">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="exampleEmail">Example email</label>
+                            <input type="email" class="form-control" formControlName="exampleEmail" id="exampleEmail"
+                              placeholder="name@example.com">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleSelect">Example select</label>
+                          <select class="form-control" id="exampleSelect" formControlName="exampleSelect">
+                            <option>Frontend Development</option>
+                            <option>Backend Development</option>
+                            <option>Fullstack Development</option>
+                          </select> </div>
+                        <div class="form-group">
+                          <label for="exampletextarea">Example textarea</label>
+                          <textarea class="form-control" id="exampletextarea" rows="3"
+                            formControlName="exampleTextarea"></textarea>
+                        </div>
+                        <div class="form-row justify-content-center">
+                          <button (click)="onLoad()" type="submit" class="btn btn-primary mr-4">Load</button>
+                          <button (click)="onReset()" type="submit" class="btn btn-primary mr-4">Reset</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="collapse" id="builder" data-parent="#exampleForms">
+
+            <div class="container-fluid mb-5">
+              <div class="row mb-5">
+                <div class="col-4 mt-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary font-weight-bold">Result 2</h5>
+                      {{ simpleForm.value | json }}
+                    </div>
+                  </div>
+                </div>
+                <div class="col-8 mt-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary font-weight-bold">Reactive Form Example 2</h5>
+                      <form [formGroup]="simpleForm">
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="exampleName">Example name</label>
+                            <input type="text" class="form-control" formControlName="exampleName" id="exampleName"
+                              placeholder="name@example.com">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="exampleEmail">Example email</label>
+                            <input type="email" class="form-control" formControlName="exampleEmail" id="exampleEmail"
+                              placeholder="name@example.com">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleSelect">Example select</label>
+                          <select class="form-control" id="exampleSelect" formControlName="exampleSelect">
+                            <option>Frontend Development</option>
+                            <option>Backend Development</option>
+                            <option>Fullstack Development</option>
+                          </select> </div>
+                        <div class="form-group">
+                          <label for="exampletextarea">Example textarea</label>
+                          <textarea class="form-control" id="exampletextarea" rows="3"
+                            formControlName="exampleTextarea"></textarea>
+                        </div>
+                        <div class="form-row justify-content-center">
+                          <button (click)="onLoad()" type="submit" class="btn btn-primary mr-4">Load</button>
+                          <button (click)="onReset()" type="submit" class="btn btn-primary mr-4">Reset</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--<div class="container-fluid mb-5">
+  <div class="row mb-5">
+    <div class="col-4 mt-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-primary font-weight-bold">Result</h5>
+          {{ simpleForm.value | json }}
+        </div>
+      </div>
+    </div>
+    <div class="col-8 mt-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-primary font-weight-bold">Reactive Form Example</h5>
+          <form [formGroup]="simpleForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="exampleName">Example name</label>
+                <input type="text" class="form-control" formControlName="exampleName" id="exampleName"
+                  placeholder="name@example.com">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="exampleEmail">Example email</label>
+                <input type="email" class="form-control" formControlName="exampleEmail" id="exampleEmail"
+                  placeholder="name@example.com">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleSelect">Example select</label>
+              <select class="form-control" id="exampleSelect" formControlName="exampleSelect">
+                <option>Frontend Development</option>
+                <option>Backend Development</option>
+                <option>Fullstack Development</option>
+              </select> </div>
+            <div class="form-group">
+              <label for="exampletextarea">Example textarea</label>
+              <textarea class="form-control" id="exampletextarea" rows="3" formControlName="exampleTextarea"></textarea>
+            </div>
+            <div class="form-row justify-content-center">
+              <button (click)="onLoad()" type="submit" class="btn btn-primary mr-4">Load</button>
+              <button (click)="onReset()" type="submit" class="btn btn-primary mr-4">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
