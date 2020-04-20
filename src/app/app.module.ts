@@ -2,20 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ExampleReactiveFormComponent } from './example-reactive-form/example-reactive-form.component';
-
-import { ReactiveFormsModule } from '@angular/forms';
-import { PrettyJsonPipe } from './example-reactive-form/pretty-json.pipe';
+import { ExampleReactiveFormModule } from './example-reactive-form/example-reactive-form.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ExampleReactiveFormComponent,
-    PrettyJsonPipe
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ExampleReactiveFormModule
   ],
   providers: [],
   bootstrap: [AppComponent]

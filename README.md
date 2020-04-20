@@ -1,9 +1,6 @@
 # Angular 9 Example Reactive Form
 
-> An Angular starter kit featuring [Angular 9.0.5](https://angular.io), [Angular CLI 9.0.5](https://cli.angular.io/)
-
-# Web Application Live Demo
-[https://angular.ganatan.com](https://angular.ganatan.com)
+> An Angular starter kit featuring [Angular 9.1.2](https://angular.io), [Angular CLI 9.1.1](https://cli.angular.io/)
 
 
 ## Quick start
@@ -24,35 +21,30 @@ npm start
 ```
 in your browser go to [http://localhost:4200](http://localhost:4200) 
 
-## Getting Started
-
-
 ### Installation
 * `npm install` (installing dependencies)
 * `npm outdated` (verifying dependencies)
 
-### Development
+### Developpement
 * `npm run start`
-* in your browser go to [http://localhost:4200](http://localhost:4200) 
+* in your browser [http://localhost:4200](http://localhost:4200) 
+
+### Production 
+* `npm run build`
 
 ### Tests
 * `npm run lint`
 * `npm run test`
 * `npm run e2e`
 
-### Production 
-* `npm run build`
-
 ### Author
-* Updated : 06/03/2020
+* Updated : 20/04/2020
 * Author  : danny
 
 ### Documentation
 
-English Guides
-- Installation - https://www.ganatan.com/guides/angular-how-to-create-reactive-form
-- step-by-step guides - https://www.ganatan.com/guides/en
+English Tutorials
+- Tutorials Step-by-Step - https://www.ganatan.com/tutorials/en
 
-Guides en français
-- Installation - https://www.ganatan.com/guides/angular-comment-creer-reactive-form
-- Guides Etape par étape - https://www.ganatan.com/guides
+Tutoriels en français
+- Tutoriels Etape par étape - https://www.ganatan.com/tutorials

@@ -1,7 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ExampleReactiveFormComponent } from './example-reactive-form.component';
+
 import { FormBuilder } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { PrettyJsonPipe } from './pretty-json.pipe';
 
 describe('ExampleReactiveFormComponent', () => {
@@ -10,6 +12,9 @@ describe('ExampleReactiveFormComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        ReactiveFormsModule,
+      ],
       declarations: [
         ExampleReactiveFormComponent,
         PrettyJsonPipe
