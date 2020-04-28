@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
-  selector: 'app-classes',
+  selector: 'app-form-group',
   templateUrl: './exercice.component.html',
   styleUrls: ['./exercice.component.css'],
 })
@@ -20,6 +20,10 @@ export class ExerciceComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.updateControls();
+  }
+
+  updateControls() {
     this.exampleForm.patchValue({
       name: 'Avengers: Endgame',
       releaseDate: '26/04/2019',
@@ -31,17 +35,14 @@ export class ExerciceComponent implements OnInit {
     });
   }
 
-  updateControls() {
-    this.exampleForm.patchValue({
-      name: 'Avengers: Endgame patchValue',
-      releaseDate: '26/04/2019 patchValue',
-    });
-  }
-
   resetControls() {
     this.exampleForm.patchValue({
       name: null,
       releaseDate: null,
+      franchise: null,
+      budget: null,
+      worldwide: null,
+      summary: null,
     });
   }
 

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
 @Component({
-  selector: 'app-classes',
+  selector: 'app-form-control',
   templateUrl: './exercice.component.html',
   styleUrls: ['./exercice.component.css'],
 })
@@ -18,6 +18,10 @@ export class ExerciceComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.updateControls();
+  }
+
+  updateControls() {
     this.name.setValue('Avengers: Endgame');
     this.releaseDate.setValue('26/04/2019');
     this.franchise.setValue(true);
@@ -25,15 +29,6 @@ export class ExerciceComponent implements OnInit {
     this.worldwide.setValue('2797800564');
     this.summary.setValue('After the devastating events of Avengers: Infinity War (2018), ' +
       'the universe is in ruins.');
-  }
-
-  updateControls() {
-    this.name.setValue('update name');
-    this.releaseDate.setValue('update Date');
-    this.franchise.setValue(true);
-    this.budget.setValue('update Budget');
-    this.worldwide.setValue('update Worlwide');
-    this.summary.setValue('update Summary');
   }
 
   resetControls() {

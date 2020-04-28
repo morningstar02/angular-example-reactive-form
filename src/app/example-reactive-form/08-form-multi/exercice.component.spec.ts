@@ -1,7 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { ExerciceComponent } from './exercice.component';
+import { PrettyJsonPipe } from './pretty-json.pipe';
 
 describe('ExerciceComponent', () => {
   let component: ExerciceComponent;
@@ -13,7 +15,10 @@ describe('ExerciceComponent', () => {
         ReactiveFormsModule,
         FormsModule,
       ],
-      declarations: [ExerciceComponent]
+      declarations: [
+        ExerciceComponent,
+        PrettyJsonPipe
+      ]
     })
       .compileComponents();
   }));
