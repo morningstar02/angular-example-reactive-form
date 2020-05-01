@@ -6,8 +6,8 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   {
     path: 'reactive-form',
-    loadChildren: () => import('./example-reactive-form/example-reactive-form.module')
-      .then(mod => mod.ExampleReactiveFormModule)
+    loadChildren: () => import('./example-reactive-form/tutorial.module')
+      .then(mod => mod.TutorialModule)
   },
   { path: '', component: HomeComponent },
   { path: '**', component: HomeComponent }

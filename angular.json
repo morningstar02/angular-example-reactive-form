@@ -67,7 +67,7 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-example-reactive-form:build:production"
+              "browserTarget": "angular-example-crud:build:production"
             }
           }
         },
