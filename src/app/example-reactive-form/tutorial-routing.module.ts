@@ -10,28 +10,8 @@ const routes: Routes = [
     path: '', component: TutorialComponent, children: [
       { path: 'prototype', component: ExerciceComponent },
       {
-        path: 'form-multi',
-        loadChildren: () => import('./08-form-multi/exercice.module')
-          .then(mod => mod.ExerciceModule)
-      },
-      {
-        path: 'form-array',
-        loadChildren: () => import('./07-form-array/exercice.module')
-          .then(mod => mod.ExerciceModule)
-      },
-      {
-        path: 'form-builder-nested',
-        loadChildren: () => import('./06-form-builder-nested/exercice.module')
-          .then(mod => mod.ExerciceModule)
-      },
-      {
-        path: 'form-builder',
-        loadChildren: () => import('./05-form-builder/exercice.module')
-          .then(mod => mod.ExerciceModule)
-      },
-      {
-        path: 'form-group',
-        loadChildren: () => import('./04-form-group/exercice.module')
+        path: 'form-control',
+        loadChildren: () => import('./02-form-control/exercice.module')
           .then(mod => mod.ExerciceModule)
       },
       {
@@ -40,8 +20,28 @@ const routes: Routes = [
           .then(mod => mod.ExerciceModule)
       },
       {
-        path: 'form-control',
-        loadChildren: () => import('./02-form-control/exercice.module')
+        path: 'form-group',
+        loadChildren: () => import('./04-form-group/exercice.module')
+          .then(mod => mod.ExerciceModule)
+      },
+      {
+        path: 'form-builder',
+        loadChildren: () => import('./05-form-builder/exercice.module')
+          .then(mod => mod.ExerciceModule)
+      },
+      {
+        path: 'form-builder-nested',
+        loadChildren: () => import('./06-form-builder-nested/exercice.module')
+          .then(mod => mod.ExerciceModule)
+      },
+      {
+        path: 'form-array',
+        loadChildren: () => import('./07-form-array/exercice.module')
+          .then(mod => mod.ExerciceModule)
+      },
+      {
+        path: 'form-multi',
+        loadChildren: () => import('./08-form-multi/exercice.module')
           .then(mod => mod.ExerciceModule)
       },
       {
