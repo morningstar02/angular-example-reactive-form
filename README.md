@@ -1,6 +1,6 @@
 # Angular 9 Example Reactive Form
 
-> An Angular starter kit featuring [Angular 9.1.6](https://angular.io), [Angular CLI 9.1.5](https://cli.angular.io/)
+> An Angular starter kit featuring [Angular 9.1.7](https://angular.io), [Angular CLI 9.1.6](https://cli.angular.io/)
 
 
 ## Quick start
@@ -38,7 +38,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run e2e`
 
 ### Author
-* Updated : 12/05/2020
+* Updated : 17/05/2020
 * Author  : danny
 
 ### Documentation
