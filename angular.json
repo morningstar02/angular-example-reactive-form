@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-example-reactive-form": {
+    "angular-starter": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-example-reactive-form",
+            "outputPath": "dist/angular-starter",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -26,7 +26,7 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
           "configurations": {
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-example-reactive-form:build"
+            "browserTarget": "angular-starter:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-example-crud:build:production"
+              "browserTarget": "angular-starter:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-example-reactive-form:build"
+            "browserTarget": "angular-starter:build"
           }
         },
         "test": {
@@ -104,16 +104,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-example-reactive-form:serve"
+            "devServerTarget": "angular-starter:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-example-reactive-form:serve:production"
+              "devServerTarget": "angular-starter:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "angular-example-reactive-form"
+  "defaultProject": "angular-starter"
 }
